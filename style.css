@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 55, 55);
+    overflow: hidden;
+}
+
+.menu{
+    position: absolute;
+    left: -25px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(0deg);
+    transition: transform  linear .5s;
+    z-index: 1;
+
+
+}
+.menu i{
+    /* position: relative; */
+    font-size: large;
+    cursor: pointer;
+    transition: backgroundColor linear .9s;
+}
+
+.menuDetails{
+    position: absolute;
+    /* background-color: red; */
+    transform: translateX(-100%);
+    bottom: 0;
+    transition: transform ease-out  .4s;
+}
+.menuDetails ul li{
+    list-style: none;
+    padding: 0 3px;
+    color: white;
+    margin: 10px 0;
+}
+.fa-house-chimney,.fa-user,.fa-envelope {
+    padding: 0 5px;
+}
+.fa-user{
+    padding-left: 15px;
+}
+.fa-envelope {
+    padding-left: 25px;
+}
+/* .menu .fa-xmark{
+    display: none;
+} */
+.articles{
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    border: 1px solid black;
+    padding: 1.8rem;
+    background-color: rgb(207, 206, 206);
+    transition: all linear .5s;
+}
+.articles img{
+    width: 100%;
+}
+
+/* .articles:hover{
+    top: -21%;
+    /* left: 24%; */
+    /* height: 120vh;
+    transform: rotate(-30deg); */
+/* } */
+@media(max-width:450px){
+.articles{
+    width: 100vw;
+    height: 100vh;
+}
+}
